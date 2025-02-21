@@ -75,7 +75,7 @@ const Welcome = () => {
           </Box>
           <Box mt="50px">
           <CustomBtn text={"Let's Get You Started"} bg={_COLORS?.brand} width={"full"} handleClick={()=>{
-            router.push("/first-question")
+            router.push("/firstQuestion")
           }}/>
           </Box>
           

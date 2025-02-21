@@ -13,7 +13,7 @@ const Congratulation = () => {
         // Set a timeout to navigate after 5 seconds (5000ms)
         const timeout = setTimeout(() => {
           router.push('/welcome'); // Replace '/new-page' with your desired route
-        }, 5000);
+        }, 3000);
     
         // Clean up the timeout if the component is unmounted
         return () => clearTimeout(timeout);

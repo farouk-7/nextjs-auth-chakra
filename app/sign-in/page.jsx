@@ -53,7 +53,9 @@ const SignIn = () => {
             <FormInput label={"Password"} focusBorderColor={_COLORS?.brand} type={"password"} name={"password"} value={formValues?.password} handleChange={handleChange} />
           </Flex>
           <Flex justify={"flex-end"} gap={"50px"} mt="20px">
-            <Text fontWeight={500} color={_COLORS?.brand}>Forgotten Password ?</Text>
+            <Text fontWeight={500} color={_COLORS?.brand}cursor={"pointer"} onClick={()=>{
+              router.push("/forgotPassword")
+            }} >Forgotten Password ?</Text>
           </Flex>
           <Flex my={"30px"}>
             <CustomBtn text={"Proceed To Dashboard"} width={"full"} bg={_COLORS?.brand} handleClick={handleLogin} loading={loading} />

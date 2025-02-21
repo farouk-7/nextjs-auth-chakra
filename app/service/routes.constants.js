@@ -2,10 +2,19 @@ export const AUTH_ROUTES = {
   // AUTH
   LOGIN: "/user/login",
   SIGN_UP:"/user",
+  FORGOT_PASSWORD: "/user/forgot-password",
+  RESEND_OTP:"/user/resend-otp",
+SEND_OTP:"/user/verify-otp",
+
+
+ //QUESTIONS
+ GET_QUESTIONS:(type)=>`/user/questions/?type=${type}`,
+
+
   GET_LOGGED_IN_VENDOR: "/vendor/me",
   CHANGE_PASSWORD:"/vendor/change-password",
-  FORGOT_PASSWORD:"/vendor/forgot-password",
-  SEND_OTP:"/auth/verify/otp",
+  
+  
   RESET_PASSWORD: "/reset-password",
   UPDATE_IMAGE:(vendorId)=>`/vendor/update/${vendorId}?image`,
 
